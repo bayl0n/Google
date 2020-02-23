@@ -1,5 +1,26 @@
+body {
+    font-family: arial, sans-serif;
+}
+
 #main-content {
     text-align: center;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+a.nav-item {
+    text-decoration: none;
+    margin: 1rem;
+    color: #3f3f3f;
+    font-size: 0.9rem;
+}
+
+a.nav-item:hover {
+    text-decoration: underline;
 }
 
 div#logo-img {
@@ -10,6 +31,10 @@ div#logo-img {
     width: 272px;
     height: 92px;
     margin: 1rem;
+}
+
+img#logo-img {
+    padding-top: 10rem;
 }
 
 div#logo {
@@ -25,11 +50,11 @@ div#logo {
     margin: 1.5rem;
 }
 
-#input:hover {
+#input:hover, #input:focus {
     box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.30);
 }
 
-#input:focus {
+#input:focus{
     outline: none;
 }
 

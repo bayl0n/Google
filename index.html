@@ -2,34 +2,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab</title>
+    
+    <title>Google</title>
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/icon.png">
 </head>
 <body>
+
+    <!-- NAV BAR -->
     <nav id="main-nav">
         <div id="nav-info">
-            <a href="#">About</a>
-            <a href="#">Store</a>
+            <a class="nav-item" href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="nav-item" href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
         </div>
         <div id="nav-profile">
-            <a href="https://www.gmail.com">Gmail</a>
-            <a href="https://www.google.com/imghp?hl=en">Images</a>
-            <a href="#">More Apps</a>
-            <a href="#">Profile</a>
+            <a class="nav-item" href="https://www.gmail.com">Gmail</a>
+            <a class="nav-item" href="https://www.google.com/imghp?hl=en">Images</a>
+            <a class="nav-item" href="#">More Apps</a>
+            <a class="nav-item" href="#">Profile</a>
         </div>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <main id="main-content">
+        <!-- LOGO -->
         <div id="logo">
-            <div id="logo-img"></div>
-            <!-- <img src="images/logo.png" alt="Google Logo" title="Google" width="272px"> -->
+            <!-- <div id="logo-img"></div> -->
+            <img src="images/logo.png" alt="Google Logo" title="Google" width="272px" id="logo-img">
         </div>
 
+        <!-- INPUT -->
         <div id="input-container">
-            <input id="input" type="url" placeholder="Search Google or Type a URL">
+            <input id="input" type="text" placeholder="Search Google or Type a URL">
         </div>
 
+        <!-- SEARCH BUTTONS -->
         <div id="user-submit">
             <div class="submit-container">
                 <button class="google-button">Google Search</button>
@@ -38,7 +46,6 @@
             <div class="submit-container">
                 <button class="google-button">I'm Feeling Lucky</button>
             </div>
-            
         </div>
     </main>
 </body>
