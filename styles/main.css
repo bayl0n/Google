@@ -1,0 +1,31 @@
+#main-content {
+    text-align: center;
+}
+
+div#logo-img {
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    left: calc(50% - 272px/2);
+    position: relative;
+    width: 272px;
+    height: 92px;
+    margin: 1rem;
+}
+
+div#logo {
+    display: inline;
+}
+
+#input {
+    font-size: 1rem;
+    width: 544px;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.30);
+    margin: 1.5rem;
+}
+
+#input:focus {
+    outline: none;
+}
