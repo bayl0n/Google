@@ -2,58 +2,153 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Google</title>
+    <title>build this webpage - Google</title>
     
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/icon.png">
 </head>
 <body>
     
-    <div id="view-port">
+    <div class="view-port">
         <!-- NAV BAR -->
-        <nav id="main-nav">
-            <div id="nav-info">
-                <a class="nav-item" href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
-                <a class="nav-item" href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
+        <nav class="nav-grid">
+            <div class="main-nav nav-search">
+                <div class="nav-search-input">
+                    <a href="index.html"><img src="images/logo.png" alt="Google Logo" title="Google" width="92px" height="33px"></a>
+                    <!-- INPUT -->
+                    <div class="fake-input">
+                        <div class="input-items">
+                            <input class="input" type="text" value="build this webpage">
+                            <a href="#"><img class="mic icon" src="images/mic.png" alt="mic" title="Search by voice" width="24" height="24"></a>
+                            <a href="#"><svg class="input-search-icon"focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#649BF6"></path></svg></a>
+                            <img class="search icon" src="images/search-icon.png" alt="search" width="24" hidden>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-profile">
+                    <a class="nav-item" href="#"><img src="images/dock-icon.png" alt="Google Apps" title="Google Apps" hidden>Google Apps</a>
+                    <a class="nav-item" href="#"><button class="button sign-in-button sign-in">Sign In</button></a>
+                </div>
             </div>
-            <div id="nav-profile">
-                <a class="nav-item" href="https://www.gmail.com">Gmail</a>
-                <a class="nav-item" href="https://www.google.com/imghp?hl=en">Images</a>
-                <a class="nav-item" href="#"><img src="images/dock-icon.png" alt="Google Apps" title="Google Apps" hidden></a>
-                <a class="nav-item" href="#"><button class="button sign-in-button" id="sign-in">Sign In</button></a>
+            
+            <div class="nav-options">
+                <ul class="nav-tab">
+                    <a href="#"><li class="nav-tab-item highlighted-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path></svg>
+                        All
+                    </li></a>
+                    <a href="#"><li class="nav-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z" fill="#86898D"></path></svg>
+                        News
+                    </li></a>
+                    <a href="#"><li class="nav-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.50302273,-6.81818182e-05 C10.5930227,-6.81818182e-05 13.0052955,2.48720455 13.0052955,5.42720455 C13.0052955,7.76379545 11.8748409,9.12061364 10.7443864,10.4774318 C10.2909773,11.0051591 9.83893182,11.6078864 9.38688636,12.2112955 C8.93484091,12.8140227 8.63347727,13.7187955 8.40711364,14.1708409 C8.18143182,14.6228864 8.03006818,14.9999318 7.50302273,14.9999318 C6.97461364,14.9999318 6.82461364,14.6228864 6.59825,14.1708409 C6.37188636,13.7187955 6.07052273,12.8140227 5.61847727,12.2112955 C5.16575,11.6078864 4.71370455,11.0051591 4.26165909,10.4774318 C3.13120455,9.12061364 2.00006818,7.76379545 2.00006818,5.42720455 C2.00006818,2.48720455 4.41165909,-6.81818182e-05 7.50302273,-6.81818182e-05 Z M7.50302273,1.36356818 C5.22029545,1.36356818 3.36370455,3.18606818 3.36370455,5.42720455 C3.36370455,7.27015909 4.22211364,8.29970455 5.30893182,9.60402273 C5.77734091,10.1508409 6.25120455,10.7822045 6.70938636,11.3931136 C7.04893182,11.8458409 7.30461364,12.3831136 7.50302273,12.8378864 C7.70075,12.3831136 7.95643182,11.8458409 8.29597727,11.3931136 C8.75484091,10.7822045 9.22734091,10.1508409 9.70870455,9.58970455 C10.7825682,8.29970455 11.6416591,7.27015909 11.6416591,5.42720455 C11.6416591,3.18606818 9.78438636,1.36356818 7.50302273,1.36356818 Z M7.50275,4.09793182 C8.23638636,4.09793182 8.83161364,4.69315909 8.83161364,5.42679545 C8.83161364,6.16111364 8.23638636,6.75634091 7.50275,6.75634091 C6.76843182,6.75634091 6.17320455,6.16111364 6.17320455,5.42679545 C6.17320455,4.69315909 6.76843182,4.09793182 7.50275,4.09793182 Z" fill="#86898D"></path></svg>
+                        Maps
+                    </li></a>
+                    <a href="#"><li class="nav-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z" fill="#86898D" fill-rule="evenodd"></path></svg>
+                        Videos
+                    </li></a>
+                    <a href="#"><li class="nav-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" fill="#86898D"></path></svg>
+                        Shopping
+                    </li></a>
+                    <a href="#"><li class="nav-tab-item">
+                        <svg class="nav-tab-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#86898D"></path></svg>
+                        More
+                    </li></a>
+                </ul>
+                <ul class="nav-advanced-options">
+                    <a href="#"><li class="nav-tab-item">Settings</li></a>
+                    <a href="#"><li class="nav-tab-item">Tools</li></a>
+                </ul>
             </div>
         </nav>
         
+        
         <!-- MAIN CONTENT -->
-        <main id="main-content">
-            <!-- LOGO -->
-            <div id="logo-container">
-                <img id="logo-img" src="images/logo.png" alt="Google Logo" title="Google" width="272px" height="92px">
-            </div>
+        <main class="main-content-search">
+            <div class="search-result-time">About 82,700,000 results (0.49 seconds) </div>
             
-            <!-- INPUT -->
-            <div id="input-container">
-                <div id="fake-input">
-                    <div id="input-items">
-                        <img id="search" class="icon" src="images/search-icon.png" alt="search" width="24">
-                        <input id="input" type="text">
-                        <a href="#"><img id="mic" class="icon" src="images/mic.png" alt="mic" width="24" height="24"></a>
+            <div class="search-result">
+                <a href="#" class="search-result-link">
+                    <div class="search-result-url">christine-27.github.io › google-homepage</div>
+                    <h2 class="search-result-title">build this webpage - GitHub Pages</h2>
+                </a>
+                <div class="search-result-description">
+                    TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: 1. Log in to your hosting account. 2. Go to your ...
+                </div>
+            </div>
+            <div class="search-result">
+                <a href="#" class="search-result-link">
+                    <div class="search-result-url">victor-lf.github.io › google-search-results</div>
+                    <h2 class="search-result-title">build this webpage - GitHub Pages</h2>
+                </a>
+                <div class="search-result-description">
+                    <strong>build this webpage</strong>. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
+                </div>
+            </div>
+            <div class="search-result">
+                <h2 class="result-section-title">Videos</h2>
+                <div class="video-results-container">
+                    <div class="video-results-card">
+                        <a href="#" class="search-result-link">
+                            <img src="images/thumbnail1.jpeg" alt="thumbnail1" class="video-result-thumbnail">
+                            <h2 class="search-result-title video-title video-body-item">How to Make a Website in 10 mins - Simple & Easy</h2>
+                        </a>
+                        <div class="video-results-card-info">
+                            <div class="video-body-item video-results-card-author">Website Learners</div>
+                            <div class="video-body-item video-results-card-author-info"><span class="search-result-website">YouTube</span><span class="search-result-date"> - Jan 4, 2018</span></div>
+                        </div>
+                    </div>
+                    <div class="video-results-card">
+                        <a href="#" class="search-result-link">
+                            <img src="images/thumbnail2.jpeg" alt="thumbnail1" class="video-result-thumbnail">
+                            <h2 class="search-result-title video-title video-body-item">How To Build A Website From Scratch [IN 20 MINS]</h2>
+                        </a>
+                        <div class="video-results-card-info">
+                            <div class="video-body-item video-results-card-author">Create WP Site</div>
+                            <div class="video-body-item video-results-card-author-info"><span class="search-result-website">YouTube</span><span class="search-result-date"> - April 1, 2016</span></div>
+                        </div>
+                    </div>
+                    <div class="video-results-card">
+                        <a href="#" class="search-result-link">
+                            <img src="images/thumbnail3.jpeg" alt="thumbnail1" class="video-result-thumbnail">
+                            <h2 class="search-result-title video-title video-body-item">How To Build a Website Without Code | Everyone Can Build a ...</h2>
+                        </a>
+                        <div class="video-results-card-info">
+                            <div class="video-body-item video-results-card-author">Roberto Blake</div>
+                            <div class="video-body-item video-results-card-author-info"><span class="search-result-website">YouTube</span><span class="search-result-date"> - Nov 8, 2016</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- SEARCH BUTTONS -->
-            <div id="user-submit">
-                <div class="submit-container">
-                    <button class="button google-button">Google Search</button>
-                </div>
-                
-                <div class="submit-container">
-                    <button class="button google-button">I'm Feeling Lucky</button>
+            <div class="search-result">
+                <a href="#" class="search-result-link">
+                    <div class="search-result-url">www.websitebuilderexpert.com › building-websites</div>
+                    <h2 class="search-result-title">How to Build a Website: the Step-by-Step Guide to Easy Setup ...</h2>
+                </a>
+                <div class="search-result-description">
+                    <span class="search-result-date">3 days ago - </span>Not sure how to <strong>build</strong> a <strong>website</strong>? It actually is not that hard. You don't have to be technical at all. With our handy guide, you can get started ...
                 </div>
             </div>
-        </div>
-        
-    </main>
+            <div class="search-result">
+                <a href="#" class="search-result-link">
+                    <div class="search-result-url">arstechnica.com › information-technology › 2013/07 › with-zero-cod...</div>
+                    <h2 class="search-result-title">With zero coding experience, artist building 180 webpages in ...</h2>
+                </a>
+                <div class="search-result-description">
+                    <span class="search-result-date">Jul 26, 2013 -</span> One of Jennifer Dewalt's creations, this <strong>webpage</strong> lets visitors create paintings in ... <strong>Build</strong> a different <strong>website</strong> every day for 180 consecutive days.
+                </div>
+            </div>
+            <div class="search-suggestion search-result">
+                <h2 class="result-section-title suggestion-item">People also ask</h2>
+                <div class="suggestion-item">How can I create my own webpage?</div>
+                <div class="suggestion-item">How much does it cost to build a website?</div>
+                <div class="suggestion-item">How do I create a professional website?</div>
+                <div class="suggestion-item">How do I make a great website?</div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

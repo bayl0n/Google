@@ -9,47 +9,48 @@
 </head>
 <body>
     
-    <div id="view-port">
+    <div class="view-port">
         <!-- NAV BAR -->
-        <nav id="main-nav">
-            <div id="nav-info">
+        <nav class="main-nav">
+            <div class="nav-info">
                 <a class="nav-item" href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
                 <a class="nav-item" href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
             </div>
-            <div id="nav-profile">
+            <div class="nav-profile">
                 <a class="nav-item" href="https://www.gmail.com">Gmail</a>
                 <a class="nav-item" href="https://www.google.com/imghp?hl=en">Images</a>
-                <a class="nav-item" href="#"><img src="images/dock-icon.png" alt="Google Apps" title="Google Apps" hidden></a>
-                <a class="nav-item" href="#"><button class="button sign-in-button" id="sign-in">Sign In</button></a>
+                <a class="nav-item" href="#"><img src="images/dock-icon.png" alt="Google Apps" title="Google Apps" hidden>Google Apps</a>
+                <a class="nav-item" href="#"><button class="button sign-in-button sign-in">Sign In</button></a>
             </div>
         </nav>
         
         <!-- MAIN CONTENT -->
-        <main id="main-content">
+        <main class="main-content-center">
             <!-- LOGO -->
-            <div id="logo-container">
-                <img id="logo-img" src="images/logo.png" alt="Google Logo" title="Google" width="272px" height="92px">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="Google Logo" title="Google" width="272px" height="92px">
             </div>
             
             <!-- INPUT -->
-            <div id="input-container">
-                <div id="fake-input">
-                    <div id="input-items">
-                        <img id="search" class="icon" src="images/search-icon.png" alt="search" width="24" height="24">
-                        <input id="input" type="text">
-                        <a href="#"><img id="mic" class="icon" src="images/mic.png" alt="mic" width="24" height="24"></a>
+            <div class="input-container">
+                <div id="home-input" class="fake-input">
+                    <div class="input-items">
+                        <img class="search icon" src="images/search-icon.png" alt="search" width="28" height="24" hidden>
+                        <svg class="input-search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#B3B7BC"></path></svg>
+                        <input class="input" type="text">
+                        <a href="#"><img class="mic icon" src="images/mic.png" alt="mic" title="Search by voice" width="24" height="24"></a>
                     </div>
                 </div>
             </div>
             
             <!-- SEARCH BUTTONS -->
-            <div id="user-submit">
+            <div class="user-submit">
                 <div class="submit-container">
-                    <button class="button google-button">Google Search</button>
+                    <a href="search.html"><button class="button google-button">Google Search</button></a>
                 </div>
                 
                 <div class="submit-container">
-                    <button class="button google-button">I'm Feeling Lucky</button>
+                    <a href="search.html"><button class="button google-button">I'm Feeling Lucky</button></a>
                 </div>
             </div>
         </div>
